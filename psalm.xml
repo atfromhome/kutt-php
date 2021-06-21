@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<psalm
+    errorLevel="2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="https://getpsalm.org/schema/config"
+    xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
+>
+    <projectFiles>
+        <directory name="src"/>
+        <ignoreFiles>
+            <directory name="tests"/>
+            <directory name="vendor"/>
+        </ignoreFiles>
+    </projectFiles>
+    <issueHandlers>
+        <MixedArgument errorLevel="info"/>
+        <MixedMethodCall errorLevel="info"/>
+        <MixedPropertyFetch errorLevel="info"/>
+        <MixedAssignment errorLevel="info"/>
+        <MixedReturnStatement errorLevel="error"/>
+        <MixedInferredReturnType errorLevel="error"/>
+        <MixedArgumentTypeCoercion errorLevel="error"/>
+        <MixedArrayAccess errorLevel="suppress"/>
+        <MixedOperand errorLevel="error"/>
+
+        <MissingParamType errorLevel="error"/>
+        <MissingClosureParamType errorLevel="error"/>
+        <PropertyNotSetInConstructor errorLevel="suppress"/>
+
+        <MissingReturnType errorLevel="error"/>
+        <MissingClosureReturnType errorLevel="error"/>
+        <RedundantConditionGivenDocblockType errorLevel="error"/>
+        <MissingPropertyType errorLevel="suppress"/>
+
+        <MoreSpecificImplementedParamType errorLevel="suppress"/>
+    </issueHandlers>
+</psalm>

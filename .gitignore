@@ -1,0 +1,10 @@
+# JetBrains
+.idea
+
+# composer
+/vendor
+composer.lock
+
+# phpunit
+.phpunit.result.cache
+phpunit.local.xml
