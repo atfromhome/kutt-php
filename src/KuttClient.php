@@ -206,7 +206,7 @@ class KuttClient implements LoggerAwareInterface
         );
 
         $this->logger->info(HttpClientInterface::class . ' debug.');
-        $this->logger->info($response->getInfo('debug'));
+        $this->logger->info($response->getInfo('debug') ?? "");
 
         return $response;
     }
