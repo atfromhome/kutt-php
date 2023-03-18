@@ -22,7 +22,7 @@
   "require": {
     "php": "^7.4|^8.0",
     "psr/log": "^1.1",
-    "symfony/http-client": "^5.3",
+    "symfony/http-client": "^5.3|^6.0",
     "symfony/http-client-contracts": "^2.4"
   },
   "require-dev": {
